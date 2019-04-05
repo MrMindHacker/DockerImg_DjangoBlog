@@ -137,10 +137,10 @@ EMAIL_PORT = 1025
 MAIL_USE_TLS = True
 MAIL_USE_SSL = True
 MAIL_USERNAME = '17ce121@charusat.edu.in'
-MAIL_PASSWORD = ''
+MAIL_PASSWORD = 'zspdfzfdpsz'
 """
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_USER = '17ce121@charusat.edu.in' # os.environ.get('EMAIL_USER')
-EMAIL_USE_PASSWORD = '' # os.environ.get('EMAIL_PASS')
+EMAIL_USE_PASSWORD = 'zspdfzfdpsz' # os.environ.get('EMAIL_PASS')
