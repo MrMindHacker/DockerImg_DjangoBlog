@@ -7,6 +7,6 @@ services:
         ports:
             - "8000:8000"
         volumes:
-            - .apps/django_project
+            - /apps/django_project
         command: >
          sh -c "python manage.py runserver 0.0.0.0:8000"

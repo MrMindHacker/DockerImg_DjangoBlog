@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!bd2qsf3(q(1jce-a2f3-qquyrw1z5mo#w_6(&ydp02(fv(h4='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -120,6 +120,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -136,11 +137,11 @@ EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
 MAIL_USE_TLS = True
 MAIL_USE_SSL = True
-MAIL_USERNAME = '17ce121@charusat.edu.in'
-MAIL_PASSWORD = 'zspdfzfdpsz'
+MAIL_USERNAME = 'uname'
+MAIL_PASSWORD = 'pass'
 """
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_USE_USER = '17ce121@charusat.edu.in' # os.environ.get('EMAIL_USER')
-EMAIL_USE_PASSWORD = 'zspdfzfdpsz' # os.environ.get('EMAIL_PASS')
+EMAIL_USE_USER = 'uname'  # os.environ.get('EMAIL_USER')
+EMAIL_USE_PASSWORD = 'pass'   # os.environ.get('EMAIL_PASS')
